@@ -11,3 +11,10 @@ function cement() {
     document.getElementById("Concatenate").innerHTML = sentence;
 }
 //Changes paragraph when clicked
+
+//Find all "p" elements
+var para = document.getElementsByTagName("p");
+
+function printMe(para) {
+    document.write(para);
+}
