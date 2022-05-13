@@ -2,7 +2,6 @@ function AddMe(x,y) { //Add 2 numbers
     var addition = x + y;
     document.getElementById("Math1a").innerHTML = x + " + " + y + " = ";
     document.getElementById("Math1").innerHTML = addition;
-    return addition;
 }
 
 function SubMe(x,y) { //Subtract 2 numbers
@@ -21,7 +20,6 @@ function DivMe(x,y) { //Divide 2 numbers
     var division = x / y;
     document.getElementById("Math4a").innerHTML = x + " / " +  y + " = " ;
     document.getElementById("Math4").innerHTML = division;
-    return multiplication;
 }
 
 function MathMe(x,y,a,b) { //Multiple Operators
