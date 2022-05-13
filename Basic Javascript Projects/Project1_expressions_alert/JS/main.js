@@ -13,15 +13,27 @@ var Group = "Vox Machina", Member1 = "Percy", Member2 = "Vex", Member3 = "Vax";
 //document.write(z);
 //document.write(Member2);
 
-window.alert(Y);//Makes popup with printed string
-
-document.write("Scanlan: \"BIGBY's HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAND\""
-+ "Scanlan cried out as an ethereal purple hand rose to attack!"); //combines 2 strings
-
-document.write(z);
-document.write(3+3); //Expression
-
 function firstFunction() { //Makes a button that changes text
     var str = 'Some Text!';
     document.getElementById("Button_Text").innerHTML = str
+}
+
+function causeChaos() {
+    window.alert(Y);//Makes popup with printed string
+
+    document.write("Scanlan: \"BIGBY's HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAND\""
+    + "Scanlan cried out as an ethereal purple hand rose to attack!"); //combines 2 strings
+
+    document.write(z);
+    document.write(3+3); //Expression
+
+}
+
+function chaosButton() {
+    document.getElementById("chaos_Button").innerHTML = str
+    causeChaos();
+}
+
+function mouseHover(obj) {
+    obj.innerHTML = "Too Slow";
 }
