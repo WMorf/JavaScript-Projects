@@ -55,3 +55,15 @@ function DecrMe(x) { //Decreases number
     document.getElementById("Math9a").innerHTML = x + " - " + " 1 " + " = ";
     document.getElementById("Math9").innerHTML = y;
 }
+
+function RandNum1() { //returns 1 or 0
+    x = Math.random();
+    x = Math.round(x);
+    window.alert(x);
+}
+
+function RandNum100() { //Returns random number between 0 and 100, rounded
+    x = Math.random() * 100;
+    x = Math.round(x);
+    window.alert(x);
+}
