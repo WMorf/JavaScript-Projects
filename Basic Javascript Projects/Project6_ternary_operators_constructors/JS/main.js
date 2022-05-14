@@ -13,7 +13,7 @@ function Vote_Function() {
     document.getElementById("vote").innerHTML = canVote + " to vote."
 }
 
-//Object constructor
+//Object constructor-------------------------------
 function Vehicle(Make, Model, Year, Color) {
     this.Vehicle_Make = Make;
     this.Vehicle_Model = Model;
@@ -33,7 +33,7 @@ function myFunction() {
     " manufactured in " + Erik.Vehicle_Year;
 }
 
-//Step 134 constructor
+//Step 134 constructor -----------------------------
 function Plane(Engines, Color, Seats) {
     this.Plane_Engine_Num = Engines;
     this.Plane_Color = Color;
@@ -47,4 +47,17 @@ function myOtherFunction() {
     document.getElementById("New_and_This").innerHTML =
     "The big plane has " + bigPlane.Plane_Engine_Num + " engines and has "
     + bigPlane.Plane_Seats + "seats and is " + bigPlane.Plane_Color;
+}
+
+//-----------------------------------------------
+
+//Takes 5 from the starting point "x"
+function MyNestedFunction(x) {
+    document.getElementById("nested_function").innerHTML = Count();
+    function Count() {
+        var starting_Point = x;//variable input on HTML end
+        function TakeAFive() {starting_Point -= 5;}
+        TakeAFive();
+        return starting_Point;
+    }
 }

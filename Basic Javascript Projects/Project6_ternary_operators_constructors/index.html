@@ -19,8 +19,7 @@
 
 		<br>
 
-		<div style="background-color: rgb(165, 163, 163);">
-			<!-- Checks if potential voter is above 18 to vote -->
+		<div style="background-color: rgb(165, 163, 163);"> <!-- Checks if potential voter is above 18 to vote -->
 			<p>You must be 18 to vote</p>
 			<input id="age" value="18" />
 			<button onclick="Vote_Function()">Click here</button>
@@ -36,9 +35,15 @@
 
 		<br>
 
-		<div style="background-color: rgb(165, 163, 163);">
+		<div style="background-color: rgb(165, 163, 163);"> <!-- Prints info from bigPlane.Plane -->
 			<button onclick="myOtherFunction()">Click Here</button>
 			<p id="New_and_This">Big Plane</p>
+		</div>
+
+		<br>
+
+		<div style="background-color: lightgrey;"> <!-- uses nested function -->
+			<p id="nested_function" onclick="MyNestedFunction(15)">Click here to "Take a Five"</p> <!-- varible input into function "x" will have 5 subtracted -->
 		</div>
 
 	</body>
