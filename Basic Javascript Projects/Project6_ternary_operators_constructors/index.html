@@ -9,11 +9,38 @@
 	</head>
 	
 	<body>
-		<!-- Using Ternary Operator-->
-		<p>Riders must be at least 52 centimeters tall to ride</p>
-		<input id="height" value="52" />
-		<button onclick="Ride_Function()">Click here</button>
-		<p id="ride"></p>
+		<div style="background-color: lightgrey;">
+			<!-- Using Ternary Operator-->
+			<p>Riders must be at least 52 centimeters tall to ride</p>
+			<input id="height" value="52" />
+			<button onclick="Ride_Function()">Click here</button>
+			<p id="ride"></p>
+		</div>
+
+		<br>
+
+		<div style="background-color: rgb(165, 163, 163);">
+			<!-- Checks if potential voter is above 18 to vote -->
+			<p>You must be 18 to vote</p>
+			<input id="age" value="18" />
+			<button onclick="Vote_Function()">Click here</button>
+			<p id="vote"></p>
+		</div>
+
+		<br>
+
+		<div style="background-color: lightgrey;"> <!-- Prints info from Erik.Vehicle -->
+			<button onclick="myFunction()">Click Here</button>
+			<p id="Keywords_and_Constructors">What Does Erik drive?</p>
+		</div>
+
+		<br>
+
+		<div style="background-color: rgb(165, 163, 163);">
+			<button onclick="myOtherFunction()">Click Here</button>
+			<p id="New_and_This">Big Plane</p>
+		</div>
+
 	</body>
 	
 </html>
