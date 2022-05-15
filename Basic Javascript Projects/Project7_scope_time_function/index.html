@@ -40,14 +40,27 @@
 			<p id="ifonly">Click Button1 to add to X, then Button2 to change this text</p>
 		</div>
 
+
+		<br>
+		<br>
+
+		<!-- Uses Time function for step 151 -->
+		<div style="background-color: gray;">
+			<br>
+			<button onclick="TimeFunction()">Click here for the time</button>
+			<p id="time_of_day"></p>
+		</div>
+
 		<br>
 		<br>
 
 		<!-- Uses if statement for step 147 -->
-		<div style="background-color: gray;">
-			<p>Enter a Number greater than 1,000</p>
-			<input type="text" value="Numbers here please">
-			<p id="result"></p>
+		<div style="background-color: lightgray;">
+			<p>Enter a Number greater than 9,000</p>
+			<input type="text" value="Numbers here please" id="inputvalue">
+			<button onclick="Over9000()">Enter</button>
+			<p id="result">RESULT</p><!-- Output based on the if / else results -->
+			<p id="img"></p>
 		</div>
 
 	</body>
