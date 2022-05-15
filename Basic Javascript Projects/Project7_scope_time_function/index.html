@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Template</title>
+		<link rel="stylesheet" href="./">
+		<script src="Js/main.js"></script>
+	</head>
+	
+	<body>
+		<!-- Causes error in console log -->
+		<div style="background-color: lightgray;">
+			<button onclick="iAmError()">I am Error</button><!--intentionally causes error and prints to -->
+		</div>
+
+		<br>
+
+		<!-- Uses if statement for step 146 -->
+		<div style="background-color: gray;">
+			<p id="hello" onclick="getDate()">Click to start</p>
+		</div>
+
+		<br>
+
+		<!-- Uses if statement for step 147 -->
+		<div style="background-color: lightgray;">
+			<button onclick="AddToX()">Button1</button>
+			<button onclick="IfOnly()">Button2</button><!-- X must be above 10 to alter text -->
+			<p>X must be above 10.</p>
+			<p id="valuex">Value of X = 10</p>
+			<p id="ifonly">Click Button1 to add to X, then Button2 to change this text</p>
+		</div>
+
+		<br>
+
+		<!-- Uses if statement for step 147 -->
+		<div style="background-color: gray;">
+			<p>Enter a Number greater than 1,000</p>
+			<input type="text" value="Numbers here please">
+			<p id="result"></p>
+		</div>
+
+	</body>
+	
+</html>
