@@ -9,3 +9,13 @@ div {
     border: 2px solid black ;
     border-radius: 10px;
 }
+
+img {
+    border-radius: 45px;
+    padding: 10px;
+}
+
+button {
+    padding: 5px;
+    border: 1px solid black;
+}
