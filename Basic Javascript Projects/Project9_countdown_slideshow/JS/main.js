@@ -17,33 +17,38 @@ function countdown() {
 // -------------- SlideShow ------------------ //
 
 var slideIndex = 1;
+showSlides(slideIndex);
 
 // nav controls
-function plustSlides(n) { //n = 1 or -1 , moving through the index
+function plusSlides(n) { //n = 1 or -1 , moving through the index
     showSlides(slideIndex += n);
 }
 
 // Thumbnail icontrols
-function currentSlide(n) {
+function currentSlide(n) { //selects specific slide
     showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("myslides"); // targets all elements with myslides class
+    var slides = document.getElementsByClassName("mySlides"); // targets all elements with myslides class
     var dots = document.getElementsByClassName("dot"); //targets dot class elements
-    console.log(slides.length);
 
     if (n > slides.length) {
-        slideIndex = 1
+        slideIndex = 1;
     }
     if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
     
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < dots.length; i++) { //removes active class from dot element
+        dots[i].className = dots[i].className.replace(" active", ""); //replace with empty space
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    
+    slides[slideIndex-1].style.display = "inline-block"; //sets display to inline-block
+    dots[slideIndex-1].className += " active"; //adds active to classname
 }
