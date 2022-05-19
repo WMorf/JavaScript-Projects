@@ -29,6 +29,14 @@ button {
     border-radius: 10px;
 }
 
+canvas {
+    border: 5px double black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    width: 500px;
+    height: 250px;
+}
+
 /* Classes */
 
 .test {
