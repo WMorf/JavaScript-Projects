@@ -24,6 +24,9 @@ canvas {
     pointer-events: none; /* makes canvas invisible */
 }
 
-body {
+h1 {
     text-align: center;
+    color: green;
+    background-color: black;
+    text-shadow: -2px 2px 2px darkgreen;
 }
