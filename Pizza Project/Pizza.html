@@ -26,8 +26,7 @@
 		<br>
 
 		<div id="menuBG">
-			<h1 style="margin: 0 0px 0 20px;">King <br>
-				Coop-A-Pizza</h1>
+			<h1 style="margin: 0 0px 0 20px;">Python Pizza</h1>
 			<form id="frmMenu">
 				<br>
 				<div>
@@ -54,9 +53,9 @@
 						<input class="toppings" type="checkbox" name="Topping"
 							value="Tomatoes">Worms<br>
 						<input class="toppings" type="checkbox" name="Topping"
-							value="Lizard">Lizard<br>
+							value="Tomatoes">Tomatoes<br>
 						<input class="toppings" type="checkbox" name="Topping"
-							value="Dino">Dino<br>
+							value="Olives">Olives<br>
 					</div>
 
 					<div class="menu textblock right">
@@ -83,20 +82,24 @@
 					</div>
 				</div>
 
-				<div class="textblock centerblock" id="order">
-					<div id="showText">Order:</div>
-					<br>
-					<div id="totalPrice">Total Price:</div>
+				<div class="center">
+					<h2> "Coop-A Special"</h2>
+					<p>"Dino, lizard, hold the Mammal, no worms, and spicy!"</p>
 				</div>
 
-				<input id="btnOrder" type="button" onclick="getReceipt()"
-				value="Place Order">
+				<div class="textblock centerblock" id="order">
+					<h3>Order</h3><br>
+					<div id="showText" class="left"></div>
+	
+					<div id="totalPrice" class="right"></div>
+				</div>
+
+				<div>
+					<input id="btnOrder" type="button" onclick="getReceipt()"
+					value="Place Order">
+				</div>
 
 			</form>
-			<br>
-			<br>
-			<br>
-			<br>
 		</div>
 
 		<br>

@@ -1,11 +1,11 @@
 body {
-    background-color: peachpuff;
+    background-color: #FFA600;
 }
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: brown;
-    color: salmon;
+    color:blanchedalmond;
     font-weight: 900;
     text-align: center;
     border: 2px solid black ;
@@ -32,12 +32,19 @@ nav a {
     text-align: center;
 }
 
+.buttonhover:hover {
+    background-color: brown ;
+    color: aliceblue;
+}
+
 nav a:hover {
     background-color: brown;
+    color: aliceblue;
 }
 
 footer {
-    margin-top: 500px;
+    margin-top: 700px;
+    font-weight: 900;
 }
 
 h3 {
@@ -75,7 +82,7 @@ div {
     margin: 10px auto;
 }
 
-#fromMenu {
+#frmMenu {
     width: 400px;
     height: 200px;
 }
@@ -100,7 +107,7 @@ div {
 {
     float: left;
     width: 350px;
-    height: 200px;
+    height: 400px;
 }
 
 #showText {
