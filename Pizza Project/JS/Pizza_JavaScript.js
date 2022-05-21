@@ -23,7 +23,7 @@ function getReceipt() {
     } else if (selectedSize === "Extra Large Pizza") {
         sizeTotal = 16;
     }
-    runningTotal = sizeTotal;
+    runningTotal = sizeTotal; //cost so far
     console.log(selectedSize+" = $"+sizeTotal+".00");
     console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
@@ -31,6 +31,7 @@ function getReceipt() {
     getTopping(runningTotal,text1);
 };
 
+//cycles through selected toppings
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
@@ -39,12 +40,12 @@ function getTopping(runningTotal,text1) {
         if (toppingArray[j].checked) {
             selectedTopping.push(toppingArray[j].value);
             console.log("selected topping item: ("+toppingArray[j].value+") ");
-            text1 = text1+toppingArray[j].value+"<br>";
+            text1 = text1+toppingArray[j].value+"<br>"; //updates receipt
         }
     }
-    var toppingCount = selectedTopping.length;
+    var toppingCount = selectedTopping.length; //each topping adds $1
     if (toppingCount > 1) {
-        toppingTotal = (toppingCount - 1)
+        toppingTotal = (toppingCount - 1) //1 free topping
     } else {
         toppingTotal = 0;
     }
@@ -53,7 +54,7 @@ function getTopping(runningTotal,text1) {
     console.log(toppingCount+" topping - 1 free topping = " +"$"+toppingTotal+".00");
     console.log("topping text1: "+text1);
     console.log("Purchase Total: "+"$"+runningTotal+".00");
-    document.getElementById("showText").innerHTML=text1;
-    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
+    document.getElementById("showText").innerHTML=text1; //update receipt item list
+    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+ //updates total $$$
         runningTotal+".00"+"</strong></h3>";
 };
