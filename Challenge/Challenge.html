@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1.0">
+		<title>Challenge</title>
+		<link rel="stylesheet" href="css/challenge.css">
+		<script src="js/challenge.js" defer></script>
+	</head>
+	
+	<body>
+		<section id="home"><!-- Home -->
+			<div>
+				<h1 id="intro">Challenge</h1>
+				<p id="introtext">This is some basic text</p>
+			</div>
+		<section>
+
+		<section id="contact"><!-- Contact -->
+			<form name="contact" action="" onsubmit="return validateForm()" method="post">
+				<label for="nickname">Nickname:</label><br>
+				<input type="text" name="nickname" id="nickname" placeholder="Alias">
+				<br>
+				<label for="phone">Phone Number:</label><br>
+				<input type="text" name="phone" id="phone" placeholder="555-8675-309">
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+
+		<script> //inline to keep from flickering loading from a seperate file
+
+			//fade in effect for step 391
+			document.body.classList.add('fade-out'); // adds class to body
+
+			window.addEventListener('DOMContentLoaded', () => {
+				document.body.classList.remove('fade-out'); // removes class from body
+			});
+		</script>
+
+	</body>
+	
+</html>

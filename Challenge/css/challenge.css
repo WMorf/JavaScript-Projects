@@ -1,0 +1,22 @@
+
+html {
+    background-color: black;
+}
+
+/* for step 390 */
+h1 { /* Responsive font- text size will follow the size of the browser window */
+    font-size: 8vw;
+}
+
+/* -------------------- Fade elements for step 391 -------------- */
+body {
+    opacity: 1;
+    transition: 1s opacity;
+    color: white;
+}
+
+/* Start out hidden */
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
