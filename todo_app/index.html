@@ -5,24 +5,19 @@
 		<meta charset="utf-8">
 		<title>Things To-Do This Age</title>
 		<link rel="stylesheet" href="css/todo.css">
-		<script src="js/todo.js" defer></script>
 	</head>
 	
 	<body>
 
-		<input id="task"><button id="add">Add Item</button>
+		<input id="task"><button id="add" onclick="add()">Add Item</button>
 		<hr>
-		<div id="todas"></div>
+		<div id="todos"></div> <!-- Will be collected in todos_str-->
 
-		<div class="challenges"> <!--  -->
-			<button onclick="displayChallenges()">Display Challenges</button>
-			<p id="thisJSON"></p>
-			<h3 id="thecoolerJSON"></h3>
-			<h4 id="bob"></h4>
-		</div>
+		<p id="double" ondblclick="dblClick()">Double Click</p>
 
 		<footer> Wesley Morford 2022</footer>
 
+		<script src="js/todo.js"></script>
 	</body>
 	
 </html>

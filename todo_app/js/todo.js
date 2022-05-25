@@ -1,22 +1,67 @@
+//To Do App
 
-//----------------------------Challenges-----------------------------------//
-function displayChallenges() {
+// function gets task from input
+function get_todos() {
+    //creates array of input tasks
+    var todos = new Array;
+    //pulls task saved in browser memory
+    var todos_str = localStorage.getItem('todo');
+    //if input !null, JSON will communicate with browser creating JS object
+    if (todos_str !== null) {
+        todos = JSON.parse(todos_str);
+    }
+    return todos;
+}
 
-    //Dictionary Object
-    var besties = {name: 'Sauruman', location: 'Isengard', robeColor: 'White'};
-    // convert JS object to string for step 413
-    var JSONstring = JSON.stringify(besties);
-    document.getElementById("thisJSON").innerHTML = JSONstring;
+// function adds inputed task to get_todos funtion array
+function add() {
+    //takes input task and creates variable
+    var task = document.getElementById('task').value;
 
-    //JSON string object
-    var frenemy = '{"name": "Gandalf", "location": "Around", "robeColor": "Grey"}';
-    // convert JSON strings to JS object for step 415
-    var JSONstring2 = JSON.parse(frenemy);
-    document.getElementById("thecoolerJSON").innerHTML = JSONstring2.name + " the " + 
-    JSONstring2.robeColor;
+    var todos = get_todos();
+    //Adds new task to end of array
+    todos.push(task);
+    // this converts task input into a JSON string
+    localStorage.setItem('todo', JSON.stringify(todos));
+    document.getElementById("task").value = "";
+    show();
 
-    //set key/value to be saved locally in browser for step 417
-    localStorage.setItem("General", "Witch King");
-    //Use the key to return it's value
-    document.getElementById("bob").innerHTML = localStorage.getItem("General");
+    return false;
+}
+
+//function keeps tasks permanetly displayed on screen
+function show() {
+    //sets the task retrieved as a variable
+    var todos = get_todos();
+
+    //sets up each task as ul
+    var html = '<ul>';
+    //displays a task to list in order input
+    for (var i = 0; i < todos.length; i++) {
+        //also displays task as list and creates button with "x"
+        html += '<li>' + todos[i] + '<button class="remove" id="' + i + '">x</button></li>';
+
+    };
+    html += '</ul>'
+    //This displays task as list
+    document.getElementById('todos').innerHTML = html;
+    //update display after removal
+    var buttons = document.getElementsByClassName('remove');
+    for (var i = 0; i < buttons.length; i++) { //loops through buttons
+        buttons[i].addEventListener('click',remove);
+    };
+}
+
+
+function remove() {
+    var id = this.getAttribute('id');
+    var todos = get_todos();
+    todos.splice(id, 1);
+    localStorage.setItem('todo', JSON.stringify(todos));
+    // looks in show how to display a removed item
+    show()
+}
+
+function dblClick() {
+    document.getElementById("double").innerHTML = 'Works';
 }
