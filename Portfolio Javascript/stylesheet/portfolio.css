@@ -80,6 +80,7 @@ img {
     margin: auto auto auto  auto;
 }
 
+/*
 img:hover {
     filter: grayscale(5%);
     transition: transform 1s;
@@ -90,7 +91,7 @@ footer {
     padding: 2%;
     background-color:lightgray;
 }
-
+*/
 
 /* NAVBAR STYLING */
 
@@ -210,7 +211,7 @@ footer {
     width: 100%;
 }
 
-.Previous .Next {
+.Previous, .Next {
     cursor: pointer;
     position: absolute;
     top: 50%;
