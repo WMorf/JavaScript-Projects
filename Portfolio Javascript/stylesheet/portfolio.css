@@ -86,12 +86,14 @@ img:hover {
     transition: transform 1s;
     transform: scale(1.1);
 }
+*/
 
 footer {
-    padding: 2%;
+    padding: 20%;
     background-color:lightgray;
+    z-index: 10;
 }
-*/
+
 
 /* NAVBAR STYLING */
 
